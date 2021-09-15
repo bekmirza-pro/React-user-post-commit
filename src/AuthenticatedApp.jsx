@@ -6,6 +6,7 @@ import Home from "./Pages/Home/Home";
 import Settings from "./Pages/Settings/Settings";
 import Profile from "./Pages/Profile/Profile";
 import Posts from "./Pages/Posts/Posts";
+import Comments from "./Pages/Comments/Comments";
 import "./App.scss";
 
 function AuthenticatedApp() {
@@ -39,6 +40,7 @@ function AuthenticatedApp() {
           <Route path="/settings" component={Settings} />
           <Route path="/profile/:id" component={Profile} exact />
           <Route path="/posts/:id" component={Posts} exact />
+          <Route path="/comments/:id" component={Comments} exact />
         </Switch>
       </main>
     </>

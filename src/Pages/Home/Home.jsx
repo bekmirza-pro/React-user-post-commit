@@ -7,7 +7,6 @@ function Home() {
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
   const elBtn = useRef(1);
-  // console.log(elBtn);
 
   React.useEffect(() => {
     fetch("https://reqres.in/api/users?page=" + elBtn.current)

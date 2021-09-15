@@ -38,17 +38,16 @@ function Profile() {
                 height={200}
               />
             </div>
-
             {post.length > 0 &&
               post.map((row) => (
-                <ul className="post_list">
+                <div className="post_list">
                   <li key={row.id}>
                     <div className="user_post ">
                       <p className="post_id">{row.id}</p>
                     </div>
                     <Link to={`/posts/${row.id}`}>User Post</Link>
                   </li>
-                </ul>
+                </div>
               ))}
           </>
         )}
